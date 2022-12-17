@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Stranger</string>
+    <string name="summary">Talk from random people all around the world. Make new Friends and have fun.</string>
+    <string name="Terms">By continuing, you are agreeing to our Terms and Conditions.</string>
+    <string name="findPeopleSummary">People are looking for random people.\nClick Find and talk with them</string>
+    <string name="location">or\t<u><b>Add current location</b></u></string>
+    <string name="watchSummary">In order to match with random people and make new friends\nWatch videos and Earn coins</string>
+    <string name="wallet">Wallet</string>
+    <string name="title_activity_current_location">CurrentLocation</string>
+    <string name="map_key">AIzaSyA07caHjIF3ln74Z_hLBqTcocDIebFN6Cg</string>
+</resources>

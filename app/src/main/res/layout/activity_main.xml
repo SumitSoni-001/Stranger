@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gradient_bg4"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userProfile"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/white"
+        android:padding="2dp"
+        android:src="@drawable/demo_user"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:padding="2dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toEndOf="@id/userProfile"
+        app:layout_constraintTop_toTopOf="@id/userProfile"
+        app:layout_constraintBottom_toBottomOf="@id/userProfile"/>
+
+    <LinearLayout
+        android:id="@+id/coinLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:background="@color/coin_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/logo"
+        app:layout_constraintLeft_toRightOf="@id/logo"
+        app:layout_constraintTop_toTopOf="@id/logo">
+
+        <TextView
+            android:id="@+id/tvCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingStart="5dp"
+            android:text="You have: 0 "
+            android:textColor="@color/tint_color"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/coinImg"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:paddingEnd="5dp"
+            android:src="@drawable/coin" />
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/treasure"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"
+        app:lottie_speed="1.5"
+        app:lottie_rawRes="@raw/treasure_chest"
+        app:layout_constraintBottom_toBottomOf="@id/coinLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/coinLayout" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/white"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/radar"
+        app:lottie_speed="1.5" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:src="@drawable/user_placeholder"
+        app:layout_constraintBottom_toBottomOf="@+id/animationView"
+        app:layout_constraintEnd_toEndOf="@+id/animationView"
+        app:layout_constraintStart_toStartOf="@+id/animationView"
+        app:layout_constraintTop_toTopOf="@+id/animationView" />
+
+    <TextView
+        android:id="@+id/TotalOnlineUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
+        android:text="0"
+        android:textColor="@color/tint_color"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animationView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_light"
+        android:gravity="center"
+        android:text="@string/findPeopleSummary"
+        android:textColor="@color/tint_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/TotalOnlineUsers"
+        app:layout_constraintStart_toStartOf="@id/TotalOnlineUsers"
+        app:layout_constraintTop_toBottomOf="@id/TotalOnlineUsers" />
+
+    <LinearLayout
+        android:id="@+id/spendCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/coin_spend_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        app:layout_constraintLeft_toLeftOf="@id/textView"
+        app:layout_constraintRight_toRightOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingStart="5dp"
+            android:text="Coins : 10 "
+            android:textColor="@color/tint_color" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:paddingEnd="5dp"
+            android:src="@drawable/coin" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/findPeople"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/btn_bg_color"
+        android:text="Find"
+        android:textAllCaps="false"
+        android:textColor="@color/tint_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@id/spendCoin"
+        app:layout_constraintStart_toStartOf="@id/spendCoin"
+        app:layout_constraintTop_toBottomOf="@id/spendCoin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "966988927280",
+    "project_id": "strangers-random-calling-27032",
+    "storage_bucket": "strangers-random-calling-27032.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966988927280:android:cb4accee7cf6a71bf378f5",
+        "android_client_info": {
+          "package_name": "com.example.stranger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966988927280-46bd4h73r86sb8297b6g2qhqkjalv78e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2JLAiOwsskVbfXKOP5Bxxis3Coo0WvLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966988927280-46bd4h73r86sb8297b6g2qhqkjalv78e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="tint_color">#FFFFFF</color>
+    <color name="green">#45A425</color>
+    <color name="btn_bg_color">#F8BB05</color>
+    <color name="welcomeNav">#D9572AA7</color>
+    <color name="DetailNav">#ffd1fb</color>
+    <color name="coin_bg">#523B79</color>
+    <color name="status_bg">#332151</color>
+    <color name="status">#D484CD</color>
+    <color name="coin_spend_bg">#F97066</color>
+    <color name="profile_color">#9D9D9D</color>
+    <color name="ads_Bg_color">#E5E5E5</color>
+    <color name="light_black">#3A3A3A</color>
+    <color name="logout_tint">#EB3838</color>
+
+
+</resources>
