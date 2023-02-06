@@ -15,7 +15,7 @@ Stranger is a video calling application that connects 2 unknown people via 1-on-
 - Watch ads and earn points to make more video calls.
 
 
-## Preview
+## 🌈 Preview
 
 - Login Screen
 
